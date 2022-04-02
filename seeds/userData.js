@@ -17,18 +17,18 @@ const userData = [
         password: "password",
     },
     {
-        username: Jorge,
+        username: "Jorge",
         email: "jorge@email.com",
         password: "password",
     },
     {
-        username: Jun,
+        username: "Jun",
         email: "jun@email.com",
         password: "password",
     },
     {
-        username: Six,
-        email: "six@email.com",
+        username: "Unknown",
+        email: "unknown@email.com",
         password: "password",
     },
 ];
