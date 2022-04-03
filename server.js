@@ -37,7 +37,7 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Set static content to the public foler
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 // Setup routing middleware
 app.use(routes);
