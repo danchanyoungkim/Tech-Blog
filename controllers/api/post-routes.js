@@ -8,7 +8,8 @@ router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
       // TODO: POST BODY SENT IN REQUEST. HINT USING SPREAD 
-      ...req.body,
+      body: req.body.body,
+      title: req.body.title,
       // TODO: SET USERID userId TO LOGGEDIN USERID
       userId: req.session.userId,
     });
